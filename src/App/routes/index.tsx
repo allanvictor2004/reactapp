@@ -2,14 +2,14 @@ import { BrowserRouter, Route, Routes as Switch, Navigate } from "react-router-d
 import { Dashboard, Login } from "../pages";
 
 export function Routes() {
-    return(
-        <BrowserRouter>
-            <Switch>
-                <Route path="/entrar" element={<Login/>}/>
-                <Route path="/pagina-inicial" element={<Dashboard/>}/>
-                
-                <Route path="*" element={<Navigate  to="/pagina-inicial"/>}/>
-            </Switch>
-        </BrowserRouter>
-    )
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route path="/entrar" element={<Login />} />
+        <Route path="/pagina-inicial" element={<Dashboard />} />
+
+        <Route path="*" element={<Navigate to="/pagina-inicial" />} />
+      </Switch>
+    </BrowserRouter>
+  )
 }
